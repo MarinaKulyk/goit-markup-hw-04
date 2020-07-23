@@ -107,6 +107,10 @@
 .contacts {
     margin-left: auto;
 }
+.contacts-icon {
+    width: 16px;
+    height: 11.2px;
+}
 .contacts-link:not(:last-child),
 .superiority-item:not(:last-child),
 .work-item:not(:last-child),
@@ -119,18 +123,12 @@
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-     
+    max-width: 1600px;
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url(../imges/hero/Header\ img.jpg);
-    background-size: cover;
-    background-position: center; 
-   
-
-    /* Временный фон для контраста заголовка */
-     /* background-color: var(--backgraund-color); */
+    url(../images/hero/Header\ img.jpg);
 }
 .hero-titel {
     margin: 0;
@@ -172,6 +170,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.superiority-img {
+    width: 70px;
+    height: 70px;
 }
 .superiority-titel {
     margin-top: 0;
@@ -227,6 +229,8 @@
 .team-item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+    padding-top: 16px;
+    padding-bottom: 24px;
 }
 .team-img {
     margin-bottom: 30px;
@@ -241,6 +245,28 @@
     height: 44px;
     justify-content: center;
 }
+.team-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    
+}
+/* .team-social-link:hover,
+.team-social-link:focus {
+    fill: #FFFFFF;
+    align-content: center;
+} */
+.team-social-item,
+.team-social-item,
+.footer-social-item,
+.footer-social-item {
+     display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;  
+}
 .team-social-item:not(:last-child),
 .footer-social-item:not(:last-child) {
     margin-right: 10px;
@@ -249,7 +275,13 @@
 .team-social-item:focus,
 .footer-social-item:hover,
 .footer-social-item:focus {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     background-color: var(--akcent-color);
+}
+.team-social-item:hover .team-social-icon {
+    fill: #FFFFFF;
 }
 .team-name {
     margin-top: 0;
