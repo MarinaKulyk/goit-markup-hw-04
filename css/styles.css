@@ -92,9 +92,13 @@
 }
 .nav-link:hover,
 .nav-link:focus,
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon,
+.contacts-link:hover .contacts-text,
+.contacts-link:focus .contacts-text {
+    fill: var(--akcent-color);
     color: var(--akcent-color);
+    
 }
 .contacts-link {
     color: var(--main-text-color);
@@ -110,6 +114,7 @@
 .contacts-icon {
     width: 16px;
     height: 11.2px;
+    margin-right: 10px;
 }
 .contacts-link:not(:last-child),
 .superiority-item:not(:last-child),
@@ -229,7 +234,6 @@
 .team-item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
-    padding-top: 16px;
     padding-bottom: 24px;
 }
 .team-img {
@@ -318,9 +322,15 @@
     justify-content: center;
     align-items: center;
 }
+.client-icon{
+    fill: #AFB1B8 ;
+}
 .client-link:hover,
-.client-link:focus {
+.client-link:focus,
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
     border-color: var(--akcent-color);
+    fill: var(--akcent-color);
 }
 /* Подвал */
 .footer {
