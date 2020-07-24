@@ -372,6 +372,16 @@
 .footer-contacts:focus {
     color: var(--akcent-color);
 }
+.footer-social-item{
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);  
+}
+.footer-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+}
  .footer-social-list {
     justify-content: flex-start;
     margin-top: 20px;
